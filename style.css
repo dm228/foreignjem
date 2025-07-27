@@ -32,6 +32,21 @@
              font-family: "Yellowtail", cursive;
         }
 
+        @media (max-width: 600px) {
+            .neonText {
+                font-size: 4rem;
+                text-shadow:
+                    0 0 2px #fff,
+                    0 0 3px #fff,
+                    0 0 6px #fff,
+                    0 0 10px rgba(236, 67, 153, 0.4),
+                    0 0 20px rgba(236, 67, 153, 0.4),
+                    0 0 25px rgba(236, 67, 153, 0.4),
+                    0 0 30px rgba(236, 67, 153, 0.4),
+                    0 0 40px rgba(236, 67, 153, 0.4);
+            }
+        }
+
         @keyframes pulsate {
                 
             100% {
@@ -61,6 +76,34 @@
                 0 0 70px rgba(236, 67, 153, 0.5);
 
 
+        }
+    }
+
+    @media (max-width: 600px) {
+        @keyframes pulsate {
+            100% {
+                text-shadow:
+                    0 0 2px #fff,
+                    0 0 4px #fff,
+                    0 0 6px #fff,
+                    0 0 12px rgba(236, 67, 153, 0.4),
+                    0 0 24px rgba(236, 67, 153, 0.4),
+                    0 0 28px rgba(236, 67, 153, 0.4),
+                    0 0 32px rgba(236, 67, 153, 0.4),
+                    0 0 45px rgba(236, 67, 153, 0.4);
+            }
+
+            0% {
+                text-shadow:
+                    0 0 2px #fff,
+                    0 0 4px #fff,
+                    0 0 6px #fff,
+                    0 0 10px rgba(236, 67, 153, 0.4),
+                    0 0 18px rgba(236, 67, 153, 0.4),
+                    0 0 22px rgba(236, 67, 153, 0.4),
+                    0 0 26px rgba(236, 67, 153, 0.4),
+                    0 0 36px rgba(236, 67, 153, 0.4);
+            }
         }
     }
 
@@ -425,6 +468,11 @@
             .event-time {
                 text-align: left;
                 font-size: 0.9rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .twitch-chat-container {
+                display: none;
             }
         }
 
