@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForeignJem</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header with Neon Logo -->
+        <header>
+            <h1 class="neonText">
+                Foreignjem
+            </h1>
+        </header>
+
+        <main>
+            <!-- Hero Image Section -->
+            <section class="hero">
+                <img src="foreignjem.gif" alt="A photo of ForeignJem" class="hero-image" onerror="this.onerror=null;this.src='https://placehold.co/800x450/1e1e1e/ff00e6?text=ForeignJem';">
+            </section>
+
+             <!-- Social Media Links -->
+            <section class="socials">
+                <a href="https://www.tiktok.com/@foreignjem" target="_blank" class="social-link" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.instagram.com/ForeignJem" target="_blank" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.snapchat.com/add/ForeignJem" target="_blank" class="social-link" aria-label="Snapchat">
+                    <i class="fab fa-snapchat"></i>
+                </a>
+                <a href="https://www.twitch.tv/iamforeignjem_" target="_blank" class="social-link" aria-label="Twitch">
+                    <i class="fab fa-twitch"></i>
+                </a>
+                <a href="https://www.youtube.com/@foreignjem" target="_blank" class="social-link" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </section>
+
+            <!-- Upcoming Events Section -->
+            <section class="events-section">
+                <h2>Upcoming Events</h2>
+                <div class="events-list">
+                    <div class="event-item">
+                        <span class="event-date">07/28</span>
+                        <span class="event-description">Battle with Chase</span>
+                        <span class="event-time">@ 9pm EST</span>
+                    </div>
+                    <div class="event-item">
+                        <span class="event-date">07/30</span>
+                        <span class="event-description">COD Gaming Night</span>
+                        <span class="event-time">@ 8pm EST</span>
+                    </div>
+                    <div class="event-item">
+                        <span class="event-date">08/02</span>
+                        <span class="event-description">2v2 Tournament</span>
+                        <span class="event-time">@ 10pm EST</span>
+                    </div>
+                </div>
+            </section>
+
+           
+
+            <!-- Gemini AI Features Section -->
+            <section class="gemini-section" style="display: none;">
+                <div class="gemini-card">
+                    <h2>✨ Battle Hype Generator</h2>
+                    <p>Need something to spam in the chat? Get an instant hype message to support Jem in her battles!</p>
+                    <button id="hype-button" class="gemini-button">Get Hype Message</button>
+                </div>
+                <div class="gemini-card">
+                    <h2>✨ Stream Idea Generator</h2>
+                    <p>Help Jem decide what to do next! Enter a topic and get unique stream ideas.</p>
+                    <input type="text" id="idea-input" placeholder="Enter a topic (e.g., makeup, horror games)">
+                    <button id="idea-button" class="gemini-button">Generate Ideas</button>
+                </div>
+            </section>
+
+            <!-- Twitch Stream Embed -->
+            <section class="stream-section">
+                <h2>Live Battles & Streams</h2>
+                <div id="twitch-embed" class="twitch-embed">
+                    
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 ForeignJem. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Modal for displaying Gemini results -->
+    <div id="gemini-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <button id="modal-close-button" class="modal-close">&times;</button>
+            <h3 id="modal-title" class="modal-title">AI Result</h3>
+            <div id="modal-text" class="modal-text">
+                <div class="loader"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 854,
+        height: 480,
+        channel: "iamforeignjem_",
+        // Only needed if this page is going to be embedded on other websites
+        parent: ["foreignjem.com"]
+      });
+    </script>
+
+</body>
+</html>
