@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Russo+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vibur&display=swap');
 
         :root {
             --bg-color: #121212;
@@ -27,14 +27,15 @@
                 0 0 46px rgba(236, 67, 153, 0.5),
                 0 0 51px rgba(236, 67, 153, 0.5),
                 0 0 76px rgba(236, 67, 153, 0.5);
-            font-size: 5.2rem;
+            font-size: 6.2rem;
+            font-weight: 400;
             animation: pulsate 0.11s ease-in-out infinite alternate;
-             font-family: "Yellowtail", cursive;
+               font-family: "Vibur", sans-serif;
         }
 
         @media (max-width: 600px) {
             .neonText {
-                font-size: 3.9rem;
+                font-size: 6.2rem;
                 text-shadow:
                     0 0 2px #fff,
                     0 0 3px #fff,
